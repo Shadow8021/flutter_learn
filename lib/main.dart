@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    Center(
-      child: Image.network(
-        "https://static.vecteezy.com/system/resources/previews/025/463/773/non_2x/hacker-logo-design-a-mysterious-and-dangerous-hacker-illustration-vector.jpg",
+  runApp(MaterialApp(home: HomePage()));
+}
+
+class HomePage extends StatelessWidget {
+  HomePage({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("data"), elevation: 10),
+      body: Center(child: Text("data")),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
-    ),
-  );
+    );
+  }
 }
