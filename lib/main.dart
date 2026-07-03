@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:shadow/pages/home.dart';
 
 void main() {
-  runApp(MaterialApp(home: HomePage()));
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("data"), elevation: 10),
-      body: Center(child: Text("data")),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
-    );
-  }
+  runApp(
+    MaterialApp(
+      theme: ThemeData(fontFamily: "martial"),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    ),
+  );
 }
