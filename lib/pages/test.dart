@@ -9,8 +9,12 @@ class TestPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("hemcasa"),
         centerTitle: true,
-        leading: Icon(Icons.abc),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.settings))],
+        leading: Icon(Icons.menu),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+        ],
       ),
       body: Container(color: Colors.green),
     );
