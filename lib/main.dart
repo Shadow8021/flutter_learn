@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:shadow/pages/home.dart';
+import 'package:shadow/pages/test.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      theme: ThemeData(fontFamily: "martial"),
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "matial",
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    ),
-  );
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
+        useMaterial3: true,
+      ),
+      home: TestPage(),
+    );
+  }
 }
