@@ -5,4 +5,9 @@ void main() {
   double price = 12;
 
   print("salut, ${nom}");
+  direBonjour("martian", 20);
+}
+
+direBonjour(String nom, {age = 10}) {
+  print("Bonjour ${nom} vous avez ${age} ans");
 }
