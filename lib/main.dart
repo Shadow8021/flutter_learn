@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shadow/pages/test.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(TestPage());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,5 +19,14 @@ class MyApp extends StatelessWidget {
       ),
       home: TestPage(),
     );
+  }
+}
+
+class Mywidget extends StatelessWidget {
+  const Mywidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return (Scaffold());
   }
 }
