@@ -16,7 +16,7 @@ class TestPage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
         ],
       ),
-      body: Container(color: Colors.green),
+      body: Column(children: [Container(height: 100, color: Colors.red)]),
     );
   }
 }
