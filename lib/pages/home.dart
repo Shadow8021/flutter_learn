@@ -7,10 +7,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("WhatsApp"),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))],
+        actions: [IconButton(onPressed: test, icon: Icon(Icons.more_vert))],
         backgroundColor: const Color.fromARGB(255, 12, 12, 12),
       ),
       backgroundColor: const Color.fromARGB(239, 0, 0, 0),
     );
   }
+}
+
+void test() {
+  print("bopnjour");
 }
