@@ -24,8 +24,13 @@ class Homepage extends StatelessWidget {
             margin: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.amber,
-
               borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            child: Center(
+              child: Text(
+                "Contenaire",
+                style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           Container(height: 100, color: Colors.green),
