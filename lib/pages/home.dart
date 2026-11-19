@@ -11,9 +11,9 @@ class Homepage extends StatelessWidget {
         elevation: 10,
         leading: Icon(Icons.draw_rounded),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+          IconButton(onPressed: search, icon: Icon(Icons.search)),
+          IconButton(onPressed: toogleSettings, icon: Icon(Icons.settings)),
+          IconButton(onPressed: moreOption, icon: Icon(Icons.more_vert)),
         ],
       ),
       body: Column(
@@ -90,3 +90,7 @@ class Homepage extends StatelessWidget {
     );
   }
 }
+
+void search() {}
+void toogleSettings() {}
+void moreOption() {}
