@@ -6,7 +6,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("shadowapp"),
+        title: Text("app"),
         centerTitle: true,
         elevation: 10,
         leading: Icon(Icons.draw_rounded),
@@ -84,7 +84,55 @@ class Homepage extends StatelessWidget {
               ],
             ),
           ),
-          Container(height: 100, color: Colors.blue),
+          Container(
+            width: 340,
+            padding: EdgeInsets.only(bottom: 10),
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            child: Column(
+              children: [
+                Text(
+                  "Data",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
