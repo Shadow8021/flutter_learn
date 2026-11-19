@@ -33,7 +33,27 @@ class Homepage extends StatelessWidget {
               ),
             ),
           ),
-          Container(height: 100, color: Colors.green),
+          Container(
+            height: 100,
+            width: 340,
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              color: Colors.green,
+            ),
+            child: Column(
+              children: [
+                Text(
+                  "Row",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ),
           Container(height: 100, color: Colors.blue),
         ],
       ),
