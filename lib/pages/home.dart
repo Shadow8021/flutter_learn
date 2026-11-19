@@ -34,7 +34,6 @@ class Homepage extends StatelessWidget {
             ),
           ),
           Container(
-            height: 100,
             width: 340,
             margin: EdgeInsets.all(10),
             decoration: BoxDecoration(
@@ -50,6 +49,37 @@ class Homepage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                      ),
+                    ),
+                    Container(
+                      height: 80,
+                      width: 80,
+
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                      ),
+                    ),
+                    Container(
+                      height: 80,
+                      width: 80,
+                      margin: EdgeInsets.only(bottom: 10),
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
