@@ -16,6 +16,22 @@ class Homepage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
         ],
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 100,
+            width: 330,
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.amber,
+
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+          ),
+          Container(height: 100, color: Colors.green),
+          Container(height: 100, color: Colors.blue),
+        ],
+      ),
     );
   }
 }
