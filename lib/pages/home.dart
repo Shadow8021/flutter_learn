@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
             child: Center(
               child: Text(
                 "Contenaire",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight(20)),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Text("ROW"),
+                Text("ROW", style: TextStyle(fontWeight: FontWeight.bold)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -75,6 +75,14 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+              shape: StadiumBorder(),
+            ),
+            child: Text("Button", style: TextStyle(color: Colors.white)),
           ),
         ],
       ),
