@@ -19,21 +19,6 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 100,
-            width: 330,
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.amber,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            child: Center(
-              child: Text(
-                "Contenaire",
-                style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-          Container(
             width: 340,
             margin: EdgeInsets.all(10),
             decoration: BoxDecoration(
@@ -131,6 +116,12 @@ class Homepage extends StatelessWidget {
                   ],
                 ),
               ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
           ),
         ],
