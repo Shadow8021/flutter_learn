@@ -86,6 +86,16 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: Container(
+        height: 50,
+        width: 50,
+
+        decoration: BoxDecoration(
+          color: Colors.blue[100],
+          borderRadius: BorderRadius.circular(100),
+        ),
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
