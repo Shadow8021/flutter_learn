@@ -16,85 +16,24 @@ class HomePage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
         ],
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Container(
-            height: 100,
-            width: double.infinity,
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.yellow,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            child: Center(
-              child: Text(
-                "Contenaire",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-              ),
-            ),
+          Image.network(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPNJv6khHt5ivuAVUDLrypYztI1lm-uib4lyjRfw9ug&s=10",
           ),
-          Container(
-            height: 100,
-            width: double.infinity,
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            child: Column(
-              children: [
-                Text("ROW", style: TextStyle(fontWeight: FontWeight.bold)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                    ),
-                    Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                    ),
-                    Container(
-                      height: 70,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+          Image.network(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCyNRs3GlVcybrkw57erhnrsfajRKCNvEfzbbTpyvE0qvEk6PIhfq7OM7F&s=10",
           ),
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
-              shape: StadiumBorder(),
-            ),
-            child: Text("Button", style: TextStyle(color: Colors.white)),
+          Image.network(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9jBctPjehHoKASr15pPXsnYPV_5exos8EevqhZg0UP_oCbP-Vd5BkF4&s=10",
+          ),
+          Image.network(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtz7j7Tkmxy8q8HfJpVJO8NcaYEXwgT2b-7rjAShT8dmamqhZgDsBmTtD&s=10",
+          ),
+          Image.network(
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2MRAigMLh9TdnZTcB4MJrE-o0zflHjwMUY2qQrTJzg&s=10",
           ),
         ],
-      ),
-      floatingActionButton: Container(
-        height: 50,
-        width: 50,
-
-        decoration: BoxDecoration(
-          color: Colors.blue[100],
-          borderRadius: BorderRadius.circular(100),
-        ),
-        child: Icon(Icons.add),
       ),
     );
   }
